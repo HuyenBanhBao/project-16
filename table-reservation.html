@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservation Table | WowWraps</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <main>
+            <section class="reser-t">
+                <div class="container">
+                    <div class="reser-t__inner">
+                        <h1 class="reser-t__heading">Online Reservation</h1>
+                        <p class="reser-t__desc">Book your table for lunch or dinner.</p>
+                        <form action="" class="form-second">
+                            <div class="row row-col-3 row-col-lg-2 row-col-md-1 form-second__row">
+                                <div class="col">
+                                    <label class="form-second__item">
+                                        <input type="text" name="" id="" placeholder=" " class="form-second__input" />
+                                        <span class="form-second__text">Your name</span>
+                                        <img src="./assets/icon/form/user.svg" alt="" class="form-second__icon" />
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="form-second__item">
+                                        <input type="number" name="" id="" placeholder=" " class="form-second__input" />
+                                        <span class="form-second__text">Phone number</span>
+                                        <img src="./assets/icon/form/phone.svg" alt="" class="form-second__icon" />
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="form-second__item">
+                                        <input type="email" name="" id="" placeholder=" " class="form-second__input" />
+                                        <span class="form-second__text">Email address</span>
+                                        <img src="./assets/icon/form/email.svg" alt="" class="form-second__icon" />
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="form-second__item">
+                                        <input
+                                            type="text"
+                                            name=""
+                                            id=""
+                                            placeholder="1 person"
+                                            class="form-second__input"
+                                        />
+                                        <img src="./assets/icon/form/arrow-down.svg" alt="" class="form-second__icon" />
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="form-second__item">
+                                        <input type="date" name="" id="" placeholder=" " class="form-second__input" />
+                                        <img src="./assets/icon/form/date.svg" alt="" class="form-second__icon" />
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="form-second__item">
+                                        <input type="time" name="" id="" placeholder=" " class="form-second__input" />
+                                        <img src="./assets/icon/form/time.svg" alt="" class="form-second__icon" />
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <button
+                            class="btn-rectangle-color reser-t__btn js-toggle"
+                            toggle-target="#notifi__success--reservation"
+                        >
+                            Rerserve Your Table Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reser-b">
+                <div class="container">
+                    <div class="reser-b__inner">
+                        <div class="row row-col-3 row-col-lg-1">
+                            <div class="col">
+                                <div class="reser-b__item">
+                                    <h2 class="reser-b__title">London</h2>
+                                    <ul class="reser-b__list">
+                                        <li class="reser-b__desc">Silk St, Barbican, London EC2Y 8DS</li>
+                                        <li class="reser-b__desc">gamil1234@gmail.com</li>
+                                        <li class="reser-b__desc">+00 000 0000 0000</li>
+                                    </ul>
+                                    <a href="#!" class="reser-b__link">Get Directions</a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="reser-b__item">
+                                    <h2 class="reser-b__title">Sydney</h2>
+                                    <ul class="reser-b__list">
+                                        <li class="reser-b__desc">Silk St, Barbican, London EC2Y 8DS</li>
+                                        <li class="reser-b__desc">gamil1234@gmail.com</li>
+                                        <li class="reser-b__desc">+00 000 0000 0000</li>
+                                    </ul>
+                                    <a href="#!" class="reser-b__link">Get Directions</a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="reser-b__item">
+                                    <h2 class="reser-b__title">Tokyo</h2>
+                                    <ul class="reser-b__list">
+                                        <li class="reser-b__desc">Silk St, Barbican, London EC2Y 8DS</li>
+                                        <li class="reser-b__desc">gamil1234@gmail.com</li>
+                                        <li class="reser-b__desc">+00 000 0000 0000</li>
+                                    </ul>
+                                    <a href="#!" class="reser-b__link">Get Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <div id="notifi__success--reservation" class="notifi hide">
+            <div class="notifi__inner">
+                <!-- Body -->
+                <div class="notifi__body">
+                    <p class="notifi__title">Bạn đã đặt bàn thành công !</p>
+                    <div class="notifi__row">
+                        <button
+                            class="btn-rectangle notifi__btn notifi__btn--edit js-toggle"
+                            toggle-target="#notifi__success--reservation"
+                        >
+                            Edit
+                        </button>
+                        <a href="./menu.html" class="btn-rectangle notifi__btn"> Start Order </a>
+                    </div>
+                </div>
+
+                <!-- overlay -->
+                <div class="notifi__overlay js-toggle" toggle-target="#notifi__success--reservation"></div>
+            </div>
+        </div>
+    </body>
+</html>

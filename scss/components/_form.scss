@@ -1,0 +1,109 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.form {
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+    &__desc,
+    &__rating-desc {
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%;
+    }
+    &__desc {
+        color: var(--text-sub-color);
+        margin-bottom: 24px;
+    }
+
+    &__label {
+        &--title {
+            font-family: "Plus Jakarta Sans";
+            line-height: 162.5%; /*  */
+            margin-bottom: 14px;
+        }
+        &--content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 14px;
+            &:focus-within {
+                border-bottom-color: var(--text-sub-color);
+            }
+        }
+        &--input {
+            width: 100%;
+            font-family: "Plus Jakarta Sans";
+            font-size: 1.6rem;
+            line-height: 162.5%;
+        }
+        &-icon {
+            margin-left: 8px;
+        }
+    }
+    &__rating {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    &__cmt {
+        display: block;
+        margin-top: 34px;
+        &--title {
+            display: block;
+            font-family: "Plus Jakarta Sans";
+            line-height: 162.5%;
+            margin-bottom: 8px;
+        }
+        &-area {
+            width: 100%;
+            min-height: 140px;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            font-family: "Plus Jakarta Sans";
+            font-size: 1.6rem;
+            line-height: 162.5%;
+            &:focus {
+                border-bottom-color: var(--text-sub-color);
+            }
+        }
+    }
+    &__save {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 36px;
+        &--desc {
+            color: var(--text-sub-color);
+            font-family: "Plus Jakarta Sans";
+            line-height: 162.5%;
+            display: flex;
+            // align-items: center;
+            column-gap: 10px;
+            user-select: none;
+
+            &::before {
+                content: "";
+                flex-shrink: 0;
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                transform: translateY(4px);
+                background: transparent;
+                border: 1px solid var(--text-sub-color);
+                border-radius: 5px;
+            }
+        }
+
+        &:has(:checked) &--desc::before {
+            background: var(--dark-orange);
+            border-color: var(--dark-orange);
+        }
+    }
+}

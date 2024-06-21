@@ -1,0 +1,38 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.left-right__arrows {
+    .btn-arrow {
+        --arrow-left-right: 68px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--arrow-left-right);
+        height: var(--arrow-left-right);
+        border-radius: 50%;
+        background: #fff;
+        top: 50%;
+        transform: translateY(-150%);
+        @include abstracts.screen(xl) {
+            transform: translateY(-175%);
+        }
+        @include abstracts.screen(lg) {
+            --arrow-left-right: 45px;
+            width: 45px;
+            height: 45px;
+            transform: translateY(-280%);
+        }
+
+        &__left {
+            left: calc(-1 * var(--arrow-left-right) / 2);
+        }
+        &__right {
+            right: calc(-1 * var(--arrow-left-right) / 2);
+        }
+    }
+    .arrow__left--icon,
+    .arrow__right--icon {
+        width: 30px;
+    }
+}

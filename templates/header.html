@@ -1,0 +1,125 @@
+<div class="container">
+    <div class="header-body">
+        <button class="header__bar d-none d-lg-block js-toggle" toggle-target="#header-navbar">
+            <img src="./assets/icon/bar.svg" alt="" class="header__bar--icon" />
+        </button>
+        <nav id="header-navbar" class="nav hide">
+            <button class="nav__close d-none d-md-flex js-toggle" toggle-target="#header-navbar">
+                <img src="./assets/icon/close.svg" alt="" class="nav__close--icon" />
+            </button>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="./" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./menu.html" class="nav__link">Menu</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="./pages.html" class="nav__link">Pages</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./contact.html" class="nav__link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav__row d-none d-sm-flex">
+                <a href="./table-reservation.html" class="nav__order-table">Table Reservation</a>
+
+                <a href="./cart.html">
+                    <img src="./assets/icon/bag.svg" alt="" class="nav__cart" />
+                </a>
+            </div>
+        </nav>
+        <!-- Overlay -->
+        <div class="header__overlay js-toggle" toggle-target="#header-navbar"></div>
+        <!-- Logo -->
+        <div class="logo-page">
+            <img src="./assets/icon/logo.svg" alt="" class="logo-page__icon" />
+        </div>
+        <!-- Header right -->
+        <div class="header-right">
+            <div class="header__cart">
+                <button class="header__cart--btn d-md-none js-toggle" toggle-target="#id-cart-dropdown">
+                    <img src="../assets/icon/bag.svg" alt="" class="header__cart--icon" />
+                </button>
+                <!-- dropdown -->
+                <div id="id-cart-dropdown" class="cart-dropdown hide">
+                    <div class="cart-dropdown__inner">
+                        <h3 class="cart-dropdown__title">Your order</h3>
+                        <ul class="cart-dropdown__list">
+                            <!-- item 01 -->
+                            <li class="cart-dropdown__item">
+                                <figure class="cart-dropdown__image">
+                                    <img
+                                        src="../assets/img/menu-page/lunch/img-01.png"
+                                        alt=""
+                                        class="cart-dropdown__img"
+                                    />
+                                </figure>
+                                <div class="cart-dropdown__info">
+                                    <div class="cart-dropdown__column">
+                                        <h4 class="cart-dropdown__name">Crispy chicken breasts</h4>
+                                        <p class="cart-dropdown__desc">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor
+                                            sit amet, consectetuer adipiscing elit.
+                                        </p>
+                                    </div>
+                                    <p class="cart-dropdown__price">$50</p>
+                                </div>
+                            </li>
+
+                            <!-- item 02 -->
+                            <li class="cart-dropdown__item">
+                                <figure class="cart-dropdown__image">
+                                    <img
+                                        src="../assets/img/menu-page/lunch/img-02.png"
+                                        alt=""
+                                        class="cart-dropdown__img"
+                                    />
+                                </figure>
+                                <div class="cart-dropdown__info">
+                                    <div class="cart-dropdown__column">
+                                        <h4 class="cart-dropdown__name">Crispy chicken breasts</h4>
+                                        <p class="cart-dropdown__desc">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        </p>
+                                    </div>
+                                    <p class="cart-dropdown__price">$50</p>
+                                </div>
+                            </li>
+
+                            <!-- item 03 -->
+                            <li class="cart-dropdown__item">
+                                <figure class="cart-dropdown__image">
+                                    <img
+                                        src="../assets/img/menu-page/lunch/img-03.png"
+                                        alt=""
+                                        class="cart-dropdown__img"
+                                    />
+                                </figure>
+                                <div class="cart-dropdown__info">
+                                    <div class="cart-dropdown__column">
+                                        <h4 class="cart-dropdown__name">Crispy chicken breasts</h4>
+                                        <p class="cart-dropdown__desc">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        </p>
+                                    </div>
+                                    <p class="cart-dropdown__price">$50</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="./cart.html" class="btn-rectangle-color cart-dropdown__link">Go to order</a>
+                    </div>
+                </div>
+
+                <!-- overlay -->
+                <div class="header__cart--overlay js-toggle" toggle-target="#id-cart-dropdown"></div>
+            </div>
+            <a href="./table-reservation.html" class="header__order-table d-sm-none">Table Reservation</a>
+            <a href="./" class="name-logo-page d-none d-sm-block">WowWraps</a>
+        </div>
+    </div>
+</div>

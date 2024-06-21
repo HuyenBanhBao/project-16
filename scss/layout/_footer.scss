@@ -1,0 +1,103 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.footer {
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        column-gap: 77px;
+        @include abstracts.screen(xl) {
+            column-gap: 165px;
+        }
+        @include abstracts.screen(lg) {
+            column-gap: 70px;
+        }
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            row-gap: 24px;
+        }
+    }
+    &__right {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 77px;
+        @include abstracts.screen(xl) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 50px;
+
+            row-gap: 30px;
+        }
+        @include abstracts.screen(md) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__column-logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__group-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: auto;
+        @include abstracts.screen(xl) {
+            margin-bottom: 100px;
+        }
+        @include abstracts.screen(md) {
+            margin-bottom: 50px;
+        }
+    }
+    &__logo {
+        margin-right: 8px;
+    }
+    &__name-logo {
+        font-size: 2.6rem;
+        line-height: 125%; /* */
+        text-transform: capitalize;
+    }
+    &__desc {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%; /*  */
+        margin-bottom: 16px;
+    }
+    &__download {
+        display: flex;
+        align-items: center;
+        column-gap: 18px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    &__title {
+        font-family: "Plus Jakarta Sans";
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 130%; /*  */
+        white-space: nowrap;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    &__item {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%; /*  */
+    }
+    &__item--link {
+        transition: 0.2s;
+        &:hover {
+            color: var(--dark-orange);
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+    }
+}

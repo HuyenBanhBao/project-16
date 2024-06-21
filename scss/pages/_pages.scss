@@ -1,0 +1,267 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.pages__top {
+    margin-top: 80px;
+
+    .pages__heading {
+        text-align: center;
+        font-size: 6.2rem;
+        font-weight: 500;
+        line-height: 115.625%; /*  */
+        text-transform: capitalize;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        @include abstracts.screen(lg) {
+            font-size: 5.2rem;
+        }
+        @include abstracts.screen(md) {
+            font-size: 3.4rem;
+        }
+    }
+}
+.p-hero {
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    &__media {
+        position: relative;
+        padding-top: 73%;
+    }
+    &__img--thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        @include abstracts.screen(lg) {
+            margin-top: 40px;
+        }
+        @include abstracts.screen(md) {
+            margin-top: 24px;
+        }
+    }
+    &__title {
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 125%; /* */
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        @include abstracts.screen(md) {
+            font-size: 3rem;
+        }
+    }
+    &__desc {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        line-height: 162.5%;
+        width: 85%;
+        margin-bottom: 44px;
+        @include abstracts.screen(lg) {
+            margin-bottom: 24px;
+        }
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+            width: 100%;
+        }
+    }
+    &__link {
+        position: relative;
+        display: inline-block;
+        padding: 8px 0;
+        font-family: "Plus Jakarta Sans";
+        line-height: 162.5%;
+        transition: 0.2s;
+        &:hover {
+            color: var(--dark-orange);
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--dark-orange);
+            bottom: 2px;
+        }
+    }
+}
+
+.pages {
+    margin-top: 20px;
+    @include abstracts.screen(md) {
+        margin-top: 10px;
+    }
+    &-inner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &-list__row {
+        --grid-gutter-x: 60px;
+        --grid-gutter-y: 50px;
+        @include abstracts.screen(xl) {
+            --grid-gutter-x: 40px;
+            --grid-gutter-y: 40px;
+        }
+    }
+
+    &-item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        transition: 0.2s;
+        &:hover {
+            border-bottom-color: var(--text-sub-color);
+        }
+        &__img {
+            position: relative;
+            padding-top: 93%;
+            &--thumb {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__title {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-size: 3.6rem;
+            font-weight: 500;
+            line-height: 125%;
+            text-transform: capitalize;
+            @include abstracts.screen(md) {
+                font-size: 3rem;
+            }
+        }
+
+        &__row {
+            display: flex;
+            font-family: "Plus Jakarta Sans";
+            line-height: 162.5%;
+            margin-bottom: 20px;
+        }
+        &__name {
+            display: flex;
+            align-items: center;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                margin-left: 12px;
+                margin-right: 10px;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+        &__link {
+            position: relative;
+            display: inline-block;
+            padding: 8px 0;
+            font-family: "Plus Jakarta Sans";
+            line-height: 162.5%;
+            transition: 0.2s;
+            &:hover {
+                color: var(--dark-orange);
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: var(--dark-orange);
+                bottom: 2px;
+            }
+        }
+    }
+}
+
+.p-bot {
+    margin-top: 50px;
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        @include abstracts.screen(md) {
+            padding-top: 30px;
+        }
+    }
+
+    &__media {
+        position: relative;
+        padding-top: 112.7%;
+        @include abstracts.screen(lg) {
+            padding-top: 75%;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__right {
+        margin-left: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include abstracts.screen(xl) {
+            margin-left: 10px;
+        }
+        @include abstracts.screen(lg) {
+            margin-top: 24px;
+        }
+    }
+    &__heading {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 115.625%;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        @include abstracts.screen(lg) {
+            font-size: 5.2rem;
+        }
+        @include abstracts.screen(md) {
+            font-size: 3.4rem;
+        }
+    }
+    &__desc {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        line-height: 162.5%; /* */
+        width: 85%;
+        margin-bottom: 120px;
+        @include abstracts.screen(xl) {
+            margin-bottom: 80px;
+        }
+        @include abstracts.screen(lg) {
+            margin-bottom: 60px;
+        }
+    }
+    &__form {
+        &--email {
+            width: 100%;
+        }
+    }
+}

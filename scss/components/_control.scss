@@ -1,0 +1,38 @@
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    &--list {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &--link {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: "Plus Jakarta Sans";
+        line-height: 162.5%;
+        &-active {
+            background: var(--dark-orange);
+        }
+    }
+    &--left,
+    &--right {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    &--icon {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1875%) hue-rotate(86deg) brightness(115%)
+            contrast(100%);
+
+        width: 19px;
+    }
+    &--text {
+        font-family: "Plus Jakarta Sans";
+        line-height: 162.5%;
+    }
+}

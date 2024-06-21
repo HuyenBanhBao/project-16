@@ -1,0 +1,16 @@
+.dots {
+    margin-top: 30px;
+    column-gap: 8px;
+    justify-content: center;
+}
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background: #999;
+    &-active {
+        width: 18px;
+        background: #fff;
+    }
+}

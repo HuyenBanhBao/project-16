@@ -1,0 +1,131 @@
+@use "sass:math";
+/* grid */
+$grid-breakpoints: (
+    xxl: 1400px,
+    xl: 1200px,
+    lg: 992px,
+    md: 768px,
+    sm: 576px,
+);
+$container-max-widths: (
+    sm: 100%,
+    //540
+    md: 570px,
+    //720
+    lg: 750px,
+    //960
+    xl: 990px,
+    //1140
+    xxl: 1170px,
+    //1340
+);
+$gutters: (
+    0: 0,
+    1: 0.25,
+    2: 0.5,
+    3: 1,
+    4: 1.5,
+    5: 3,
+);
+$grid-columns: 12;
+$grid-gutter-width: 30px !default;
+
+.container-fluid {
+    --grid-gutter-x: #{$grid-gutter-width};
+    --grid-gutter-y: 0;
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %gutter-padding;
+}
+
+%gutter-padding {
+    padding-left: calc(var(--grid-gutter-x) * 0.5);
+    padding-right: calc(var(--grid-gutter-x) * 0.5);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--grid-gutter-y) * -1);
+    margin-left: calc(var(--grid-gutter-x) * 0.5 * -1);
+    margin-right: calc(var(--grid-gutter-x) * 0.5 * -1);
+
+    > * {
+        margin-top: var(--grid-gutter-y);
+        @extend %gutter-padding;
+    }
+}
+.container {
+    @extend .container-fluid;
+    width: 1170px;
+}
+.col {
+    flex: 1 0;
+}
+
+@mixin make-media-query($dimension) {
+    @media (max-width: ($dimension - 0.02)) {
+        @content;
+    }
+}
+@mixin make-row-col($infix: null) {
+    @for $i from 1 through $grid-columns * 0.5 {
+        .row-col#{$infix}-#{$i} > * {
+            flex: 0 0 auto;
+            width: math.div(100%, $i);
+        }
+    }
+}
+
+@mixin make-column($infix: null) {
+    @for $i from 1 through $grid-columns {
+        .col#{$infix}-#{$i} {
+            flex: 0 0 auto;
+            width: math.div(100%, $grid-columns) * $i;
+        }
+    }
+}
+
+@mixin make-offset($infix: null) {
+    @for $i from 0 to $grid-columns {
+        .offset#{$infix}-#{$i} {
+            margin-left: if($i > 0, math.div(100%, $grid-columns) * $i, 0);
+        }
+    }
+}
+
+@mixin make-gutter($infix: null) {
+    @each $i, $ratio in $gutters {
+        .g#{$infix}-#{$i},
+        .gx#{$infix}-#{$i} {
+            --grid-gutter-x: #{$grid-gutter-width * $ratio};
+        }
+        .g#{$infix}-#{$i},
+        .gy#{$infix}-#{$i} {
+            --grid-gutter-y: #{$grid-gutter-width * $ratio};
+        }
+    }
+}
+
+@include make-offset();
+@include make-row-col();
+@include make-column();
+@include make-gutter();
+
+@each $breakpoint, $dimension in $grid-breakpoints {
+    $max-width: map-get($container-max-widths, $breakpoint);
+    $infix: "-#{$breakpoint}";
+
+    @include make-media-query($dimension) {
+        .container {
+            max-width: $max-width;
+        }
+
+        @include make-offset($infix);
+        @include make-row-col($infix);
+        @include make-column($infix);
+        @include make-gutter($infix);
+    }
+}

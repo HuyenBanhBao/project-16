@@ -1,0 +1,76 @@
+@use "../abstracts";
+
+.drinks {
+    &__inner {
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    &__list--row {
+        --grid-gutter-y: 30px;
+
+        @include abstracts.screen(lg) {
+            --grid-gutter-x: 20px;
+            --grid-gutter-y: 20px;
+        }
+
+        @include abstracts.screen(md) {
+            --grid-gutter-x: 16px;
+            --grid-gutter-y: 16px;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 129.412%; /* */
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        user-select: none;
+    }
+    &__img {
+        position: relative;
+        padding-top: 100%;
+        border: 1px solid;
+        border-image: linear-gradient(270deg, #313131, #fbf8fc) 40;
+        &--thumb {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        margin-top: 24px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__price,
+    &__name {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 141.667%; /* */
+        text-transform: capitalize;
+    }
+
+    &__btn {
+        margin-top: 1.4rem;
+        margin-left: auto;
+        font-family: "Plus Jakarta Sans";
+        padding: 6px 16px;
+        display: block;
+        border-radius: 99px;
+        background: var(--dark-orange);
+        font-size: 1.4rem;
+        line-height: 141.667%; /* */
+        text-transform: capitalize;
+    }
+}

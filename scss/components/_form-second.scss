@@ -1,0 +1,66 @@
+.form-second {
+    &__row {
+        --grid-gutter-y: 40px;
+    }
+    // label
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 15px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: none;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(1px);
+
+        font-family: "Plus Jakarta Sans";
+        line-height: 162.5%; /*  */
+
+        transition: 0.3s;
+
+        &:has(:focus) {
+            border-bottom-color: var(--dark-orange);
+        }
+    }
+    &__input {
+        font-family: "Plus Jakarta Sans";
+        color: inherit;
+        font-size: 1.6rem;
+        line-height: 162.5%; /*  */
+        &::placeholder {
+            color: inherit;
+            font-size: 1.6rem;
+            line-height: 162.5%; /*  */
+        }
+    }
+    &__item:has(:focus) &__text,
+    &__input:not(:placeholder-shown) + &__text {
+        transform: translateY(-44px);
+    }
+    &__text {
+        position: absolute;
+        transition: 0.3s;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+    &__input[type="date"]::-webkit-inner-spin-button,
+    &__input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    &__input[type="time"]::-webkit-inner-spin-button,
+    &__input[type="time"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    &__input[type="number"]::-webkit-inner-spin-button,
+    &__input[type="number"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+}

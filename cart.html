@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart | WowWraps</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <main>
+            <div class="cart">
+                <div class="container">
+                    <div class="cart__inner">
+                        <div class="row">
+                            <!-- cart list -->
+                            <div class="col-9 col-lg-12">
+                                <div class="cart__list">
+                                    <!-- cart item 1 -->
+                                    <div class="cart__item">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/menu-page/breakfact/img-01.png"
+                                                alt=""
+                                                class="cart__img--thumb"
+                                            />
+                                        </a>
+
+                                        <article class="cart__information">
+                                            <div class="cart__info">
+                                                <a href="./product-page.html">
+                                                    <h2 class="cart__title">
+                                                        Coffee Beans - Espresso Arabica and Robusta Beans
+                                                    </h2>
+                                                </a>
+                                                <p class="cart__price-prod">$47.00</p>
+
+                                                <div class="product-page__edit-num">
+                                                    <button class="product-page__btn-edit product-page__btn-minut">
+                                                        <img src="./assets/icon/minut.svg" alt="" />
+                                                    </button>
+                                                    <span class="product-page__number">1</span>
+                                                    <button class="product-page__btn-edit product-page__btn-plus">
+                                                        <img src="./assets/icon/plus.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="cart__sub-info">
+                                                <p class="cart__prices-prod">$47.00</p>
+                                                <div class="cart__sub-btn">
+                                                    <button class="cart__save">
+                                                        <img src="./assets/icon/likes.svg" alt="" class="cart__icon" />
+                                                        Save
+                                                    </button>
+                                                    <button class="cart__delete" toggle-target="#modal-screen">
+                                                        <img src="./assets/icon/delete.svg" alt="" class="cart__icon" />
+                                                        Delete
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- cart item 2 -->
+                                    <div class="cart__item">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/menu-page/breakfact/img-02.png"
+                                                alt=""
+                                                class="cart__img--thumb"
+                                            />
+                                        </a>
+
+                                        <article class="cart__information">
+                                            <div class="cart__info">
+                                                <a href="./product-page.html">
+                                                    <h2 class="cart__title">
+                                                        Coffee Beans - Espresso Arabica and Robusta Beans
+                                                    </h2>
+                                                </a>
+                                                <p class="cart__price-prod">$47.00</p>
+
+                                                <div class="product-page__edit-num">
+                                                    <button class="product-page__btn-edit product-page__btn-minut">
+                                                        <img src="./assets/icon/minut.svg" alt="" />
+                                                    </button>
+                                                    <span class="product-page__number">2</span>
+                                                    <button class="product-page__btn-edit product-page__btn-plus">
+                                                        <img src="./assets/icon/plus.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="cart__sub-info">
+                                                <p class="cart__prices-prod">$94.00</p>
+                                                <div class="cart__sub-btn">
+                                                    <button class="cart__save">
+                                                        <img src="./assets/icon/likes.svg" alt="" class="cart__icon" />
+                                                        Save
+                                                    </button>
+                                                    <button class="cart__delete" toggle-target="#modal-screen">
+                                                        <img src="./assets/icon/delete.svg" alt="" class="cart__icon" />
+                                                        Delete
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- cart item 3 -->
+                                    <div class="cart__item">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/menu-page/breakfact/img-03.png"
+                                                alt=""
+                                                class="cart__img--thumb"
+                                            />
+                                        </a>
+
+                                        <article class="cart__information">
+                                            <div class="cart__info">
+                                                <a href="./product-page.html">
+                                                    <h2 class="cart__title">
+                                                        Coffee Beans - Espresso Arabica and Robusta Beans
+                                                    </h2>
+                                                </a>
+                                                <p class="cart__price-prod">$47.00</p>
+
+                                                <div class="product-page__edit-num">
+                                                    <button class="product-page__btn-edit product-page__btn-minut">
+                                                        <img src="./assets/icon/minut.svg" alt="" />
+                                                    </button>
+                                                    <span class="product-page__number">1</span>
+                                                    <button class="product-page__btn-edit product-page__btn-plus">
+                                                        <img src="./assets/icon/plus.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="cart__sub-info">
+                                                <p class="cart__prices-prod">$47.00</p>
+                                                <div class="cart__sub-btn">
+                                                    <button class="cart__save">
+                                                        <img src="./assets/icon/likes.svg" alt="" class="cart__icon" />
+                                                        Save
+                                                    </button>
+                                                    <button class="cart__delete" toggle-target="#modal-screen">
+                                                        <img src="./assets/icon/delete.svg" alt="" class="cart__icon" />
+                                                        Delete
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Price -->
+                            <div class="col-3 col-lg-12">
+                                <div class="cart__list">
+                                    <div class="cart__price--top">
+                                        <ul class="cart__list--price">
+                                            <li class="cart__item--price">
+                                                Food
+                                                <strong>3</strong>
+                                            </li>
+                                            <li class="cart__item--price">
+                                                Price
+                                                <strong>$191.65</strong>
+                                            </li>
+                                            <li class="cart__item--price">
+                                                VAT
+                                                <strong>$10.00</strong>
+                                            </li>
+                                        </ul>
+
+                                        <div class="cart__separate"></div>
+
+                                        <p class="cart__price--total">
+                                            Estimated Total
+                                            <strong>$201.65</strong>
+                                        </p>
+
+                                        <button
+                                            class="btn-rectangle-color cart__btn--order js-toggle"
+                                            toggle-target="#notifi__success--reservation"
+                                        >
+                                            Order
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="./menu.html" class="cart__link--continue-order">
+                            <img src="./assets/icon/menu-arrow-l.svg" alt="" class="cart__arrow" />
+                            Continue Order
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drinks">
+                <div class="container">
+                    <div class="drinks__inner">
+                        <h2 class="drinks__title">Drinks</h2>
+                        <div class="drinks__list">
+                            <div class="row row-col-6 row-col-lg-3 row-col-md-2 drinks__list--row">
+                                <!-- drink item 1 -->
+                                <div class="col">
+                                    <div class="drinks__item">
+                                        <figure class="drinks__img">
+                                            <img
+                                                src="./assets/img/drinks/drink-01.jpg"
+                                                alt=""
+                                                class="drinks__img--thumb"
+                                            />
+                                        </figure>
+                                        <div class="drinks__info">
+                                            <div class="drinks__row">
+                                                <p class="drinks__name">Pepsi</p>
+                                                <span class="drinks__price">$5</span>
+                                            </div>
+
+                                            <button class="drinks__btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- drink item 2 -->
+                                <div class="col">
+                                    <div class="drinks__item">
+                                        <figure class="drinks__img">
+                                            <img
+                                                src="./assets/img/drinks/drink-02.jpg"
+                                                alt=""
+                                                class="drinks__img--thumb"
+                                            />
+                                        </figure>
+                                        <div class="drinks__info">
+                                            <div class="drinks__row">
+                                                <p class="drinks__name">Pepsi</p>
+                                                <span class="drinks__price">$5</span>
+                                            </div>
+                                            <button class="drinks__btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- drink item 3 -->
+                                <div class="col">
+                                    <div class="drinks__item">
+                                        <figure class="drinks__img">
+                                            <img
+                                                src="./assets/img/drinks/drink-03.jpg"
+                                                alt=""
+                                                class="drinks__img--thumb"
+                                            />
+                                        </figure>
+                                        <div class="drinks__info">
+                                            <div class="drinks__row">
+                                                <p class="drinks__name">Pepsi</p>
+                                                <span class="drinks__price">$5</span>
+                                            </div>
+                                            <button class="drinks__btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- drink item 4 -->
+                                <div class="col">
+                                    <div class="drinks__item">
+                                        <figure class="drinks__img">
+                                            <img
+                                                src="./assets/img/drinks/drink-04.jpg"
+                                                alt=""
+                                                class="drinks__img--thumb"
+                                            />
+                                        </figure>
+                                        <div class="drinks__info">
+                                            <div class="drinks__row">
+                                                <p class="drinks__name">Pepsi</p>
+                                                <span class="drinks__price">$5</span>
+                                            </div>
+                                            <button class="drinks__btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- drink item 5 -->
+                                <div class="col">
+                                    <div class="drinks__item">
+                                        <figure class="drinks__img">
+                                            <img
+                                                src="./assets/img/drinks/drink-05.jpg"
+                                                alt=""
+                                                class="drinks__img--thumb"
+                                            />
+                                        </figure>
+                                        <div class="drinks__info">
+                                            <div class="drinks__row">
+                                                <p class="drinks__name">Pepsi</p>
+                                                <span class="drinks__price">$5</span>
+                                            </div>
+                                            <button class="drinks__btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- drink item 6 -->
+                                <div class="col">
+                                    <div class="drinks__item">
+                                        <figure class="drinks__img">
+                                            <img
+                                                src="./assets/img/drinks/drink-06.jpg"
+                                                alt=""
+                                                class="drinks__img--thumb"
+                                            />
+                                        </figure>
+                                        <div class="drinks__info">
+                                            <div class="drinks__row">
+                                                <p class="drinks__name">Pepsi</p>
+                                                <span class="drinks__price">$5</span>
+                                            </div>
+                                            <button class="drinks__btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <div id="notifi__success--reservation" class="notifi hide">
+            <div class="notifi__inner">
+                <!-- Body -->
+                <div class="notifi__body">
+                    <p class="notifi__title">Bạn đã order thành công !</p>
+                    <div class="notifi__row">
+                        <a href="./pages.html" class="btn-rectangle notifi__btn">Our Blogs</a>
+
+                        <a href="./menu.html" class="btn-rectangle notifi__btn">Continue Order</a>
+                    </div>
+                </div>
+
+                <!-- overlay -->
+                <div class="notifi__overlay js-toggle" toggle-target="#notifi__success--reservation"></div>
+            </div>
+        </div>
+    </body>
+</html>

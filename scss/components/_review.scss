@@ -1,0 +1,46 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.review {
+    display: flex;
+    column-gap: 18px;
+
+    &__avatar {
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        &--thumb {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__reviewer,
+    &__date {
+        display: inline-block;
+    }
+    &__reviewer {
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%;
+    }
+    &__date {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.4rem;
+        line-height: 171.429%;
+    }
+    &__desc {
+        margin-top: 16px;
+        margin-bottom: 20px;
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%;
+    }
+}
+.form-review {
+    margin-top: 60px;
+}

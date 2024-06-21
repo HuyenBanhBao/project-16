@@ -1,0 +1,83 @@
+@use "../abstracts";
+// @include abstracts.screen(xl)
+
+.notifi {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-80px);
+    transition: 0.3s;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    &__body {
+        position: relative;
+        z-index: 1;
+        background: var(--dark-orange);
+
+        width: 560px;
+        padding: 30px;
+        border-radius: 20px;
+        font-family: "Plus Jakarta Sans";
+
+        @include abstracts.screen(lg) {
+            width: 400px;
+        }
+        @include abstracts.screen(md) {
+            width: 320px;
+        }
+    }
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 133.333%; /* */
+        margin-bottom: 40px;
+        user-select: none;
+        @include abstracts.screen(lg) {
+            font-size: 1.6rem;
+        }
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 20px;
+        @include abstracts.screen(md) {
+            justify-content: center;
+        }
+    }
+    &__btn {
+        padding: 10px 30px;
+        border-radius: 10px;
+        user-select: none;
+        @include abstracts.screen(lg) {
+            font-size: 1.6rem;
+        }
+        @include abstracts.screen(md) {
+            width: 50%;
+            padding: 10px 16px;
+            font-size: 1.4rem;
+        }
+
+        &--edit {
+            background: transparent;
+        }
+    }
+}

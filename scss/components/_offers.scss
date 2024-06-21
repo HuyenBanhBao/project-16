@@ -1,0 +1,76 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.offers__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    @include abstracts.screen(md) {
+        row-gap: 24px;
+    }
+}
+.offers__item {
+    display: flex;
+    align-items: center;
+    @include abstracts.screen(md) {
+        flex-direction: column;
+    }
+    &-image {
+        position: relative;
+        width: 130px;
+        padding-top: 120px;
+        flex-shrink: 0;
+        @include abstracts.screen(md) {
+            width: 100%;
+            padding-top: 100%;
+        }
+    }
+    &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &--bottom {
+        display: flex;
+        @include abstracts.screen(md) {
+            margin-top: 21px;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-left: 28px;
+        margin-right: 34px;
+        @include abstracts.screen(md) {
+            margin-left: 0;
+            row-gap: 10px;
+        }
+    }
+    &--name {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%; /*  */
+        text-transform: capitalize;
+        @include abstracts.screen(md) {
+            font-size: 2.2rem;
+        }
+    }
+    &--desc {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%; /*  */
+    }
+    &--price {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 133.333%; /*  */
+        @include abstracts.screen(md) {
+            font-size: 2.4rem;
+        }
+    }
+}

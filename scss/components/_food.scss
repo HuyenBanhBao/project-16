@@ -1,0 +1,107 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.food {
+    &__row {
+        --grid-gutter-x: 30px;
+        --grid-gutter-y: 50px;
+
+        @include abstracts.screen(xl) {
+            --grid-gutter-x: 20px;
+            --grid-gutter-y: 20px;
+        }
+    }
+    &__img {
+        position: relative;
+        padding-top: 81.1%;
+    }
+
+    &__img--thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__info-top,
+    &__info-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info-top {
+        padding-top: 16px;
+        @include abstracts.screen(md) {
+            padding-top: 30px;
+        }
+    }
+    &__info-bottom {
+        padding-top: 16px;
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            row-gap: 16px;
+            align-items: flex-start;
+        }
+        @include abstracts.screen(md) {
+            padding-top: 20px;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+    }
+    &__info-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%; /* */
+        text-transform: capitalize;
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 10px;
+        }
+        @include abstracts.screen(md) {
+            flex-direction: row;
+        }
+    }
+    &__price {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%;
+        text-transform: capitalize;
+    }
+
+    &__link,
+    &__desc {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%; /*  */
+    }
+    &__desc {
+        padding-top: 6px;
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+    &__separate {
+        margin-top: 24px;
+        height: 1px;
+        width: 100%;
+        opacity: 0.2;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    &__link {
+        position: relative;
+        color: #111114;
+        transition: 0.2s;
+        padding: 8px 16px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        background: var(--dark-orange);
+        border-radius: 99px;
+    }
+}

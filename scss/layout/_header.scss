@@ -1,0 +1,282 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.header-body {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.header__bar {
+    padding: 15px;
+    margin-left: -15px;
+}
+.header__overlay {
+    visibility: hidden;
+    opacity: 0;
+    @include abstracts.screen(lg) {
+        position: fixed;
+        inset: 0;
+        z-index: 8;
+        background: rgba($color: #000000, $alpha: 0.5);
+        transition: 0.2s;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-left: -17px;
+        margin-right: -17px;
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__item {
+        padding: 15px 17px;
+        @include abstracts.screen(md) {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    &__link {
+        display: inline-block;
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%;
+
+        @include abstracts.screen(lg) {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: #111114;
+        }
+        @include abstracts.screen(md) {
+            width: 100%;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__close {
+        align-self: flex-end;
+        @include abstracts.screen(md) {
+            width: 55px;
+            height: 55px;
+        }
+        &--icon {
+            padding: 15px;
+        }
+    }
+    &__row {
+        @include abstracts.screen(sm) {
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__order-table {
+        @include abstracts.screen(sm) {
+            font-family: "Plus Jakarta Sans";
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 162.5%;
+            padding: 15px 0;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+    }
+    &__cart {
+        margin-top: 5px;
+        padding: 15px 15px 15px 0;
+        filter: brightness(0) saturate(100%) invert(3%) sepia(2%) saturate(5569%) hue-rotate(202deg) brightness(110%)
+            contrast(92%);
+    }
+
+    @include abstracts.screen(lg) {
+        position: fixed;
+        z-index: 9;
+        inset: 0 40% 0 0;
+        padding: 30px 50px;
+        background: var(--dark-orange);
+        transition: 0.5s;
+        color: #111114;
+
+        display: flex;
+        flex-direction: column;
+
+        &.hide {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        &.show {
+            transform: translateX(0);
+            opacity: 1;
+            & ~ .header__overlay {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    @include abstracts.screen(md) {
+        inset: 0 0 -100px;
+        padding: 5px 20px 30px;
+    }
+}
+.logo-page {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    .header__cart--btn {
+        padding: 15px;
+    }
+    .header__cart--icon {
+        cursor: pointer;
+    }
+    .header__order-table {
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%;
+    }
+
+    .header__order-table {
+        padding: 15px 0;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+    .name-logo-page {
+        font-size: 2rem;
+    }
+}
+
+.header__cart--overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    inset: 0;
+    z-index: 8;
+    background: transparent;
+    transition: 0.2s;
+}
+
+.cart-dropdown {
+    position: absolute;
+    z-index: 20;
+    width: 60%;
+    right: 0;
+    top: 45px;
+    padding-top: 30px;
+    filter: drop-shadow(0 0 2px #fbf8fc);
+
+    &.hide,
+    &.show {
+        transform-origin: 74% top;
+        transition-duration: 0.5s;
+        // @include abstracts.screen(lg) {
+        //     transform-origin: 85% top;
+        // }
+    }
+
+    &.hide {
+        transform: scale(0);
+        opacity: 0;
+        visibility: hidden;
+    }
+    &.show {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+        & + .header__cart--overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &::before {
+        content: "";
+        top: 21px;
+        right: 160px;
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: #18181b;
+        transform: rotate(56deg) skew(25deg);
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        background: #18181b;
+        border: 1px solid;
+        border-image: linear-gradient(270deg, #313131, #fbf8fc) 40;
+    }
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 129.412%; /* */
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    &__item {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    &__image {
+        flex-shrink: 0;
+        width: 90px;
+        height: 90px;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+    &__name,
+    &__price {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 129.412%; /* */
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+    &__desc {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.4rem;
+        line-height: 171.429%; /* */
+    }
+    &__price {
+        margin-left: 30px;
+        color: var(--dark-orange);
+    }
+
+    &__link {
+        margin-top: 30px;
+        align-self: flex-end;
+    }
+}

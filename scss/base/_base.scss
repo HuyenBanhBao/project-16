@@ -1,0 +1,79 @@
+@use "../abstracts";
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-family: "Libre Bodoni", sans-serif;
+    background: #111114;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+a,
+img,
+button,
+input,
+label,
+textarea,
+select {
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    color: inherit;
+}
+.no-star {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(3%) saturate(10%) hue-rotate(356deg) brightness(87%)
+        contrast(80%);
+}
+.container {
+    @include abstracts.screen(sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* ====== GIOI HAN SO DONG HIEN THI ====== */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+/* ============== */
+
+i,
+em {
+    font-style: italic;
+}
+u,
+strong {
+    font-weight: 600;
+}

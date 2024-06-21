@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WowWraps</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="row">
+                            <!-- Hero left -->
+                            <div class="col-7 col-xl-6 col-lg-12">
+                                <section class="hero__info">
+                                    <div class="hero__desc">Hi, new friend!</div>
+                                    <h1 class="hero__heading">We do not cook, we create your emotions!</h1>
+                                    <div class="hero__desc">
+                                        There's evidence that cooking, like other creative practices, can boost
+                                        well-being, self-esteem, and other measures of mental health.
+                                    </div>
+                                    <a href="./menu.html" class="hero__link">Our menu</a>
+                                </section>
+                            </div>
+                            <!-- Hero right -->
+                            <div class="col-5 col-xl-6 col-lg-12">
+                                <div class="hero__media">
+                                    <div class="hero__img">
+                                        <img src="./assets/img/hero/hero-main.png" alt="" class="hero__img--thumb" />
+
+                                        <span class="hero__media--sub">Price:$11</span>
+                                    </div>
+                                    <img
+                                        src="./assets/img/hero/hero-sub-01.png"
+                                        alt=""
+                                        class="hero__img-sub hero__img-sub-1"
+                                    />
+                                    <img
+                                        src="./assets/img/hero/hero-sub-02.png"
+                                        alt=""
+                                        class="hero__img-sub hero__img-sub-2"
+                                    />
+                                    <img
+                                        src="./assets/img/hero/hero-sub-03.png"
+                                        alt=""
+                                        class="hero__img-sub hero__img-sub-3"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recommend">
+                <div class="recommend__bg-img">
+                    <img src="./assets/img/recommend/recommend-bg.png" alt="" class="recommend__thumb" />
+                </div>
+                <div class="recommend__inner">
+                    <div class="container">
+                        <div class="row row-col-3 row-col-md-1 recommend__list">
+                            <!-- recommend item 1-->
+                            <div class="col">
+                                <div class="recommend__item">
+                                    <div class="recommend__num">06</div>
+                                    <div class="recommend__content">
+                                        <span class="recommend__desc">Number</span>
+                                        <span class="recommend__desc">Restaurant</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- recommend item 1-->
+                            <div class="col">
+                                <div class="recommend__item">
+                                    <div class="recommend__num">68</div>
+                                    <div class="recommend__content">
+                                        <span class="recommend__desc">New Food</span>
+                                        <span class="recommend__desc">Menu dishes</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- recommend item 1-->
+                            <div class="col">
+                                <div class="recommend__item">
+                                    <div class="recommend__num">36</div>
+                                    <div class="recommend__content">
+                                        <span class="recommend__desc">Years of</span>
+                                        <span class="recommend__desc">experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-food">
+                <div class="container">
+                    <div class="home-food__inner">
+                        <h2 class="home-food__heading">Most popular food</h2>
+                        <p class="home-food__desc">
+                            A list of most popular Bangladeshi food including mains, drinks, and deserts you must try
+                            while in Bangladesh, for an authentic experience. Check now!
+                        </p>
+                        <div class="food">
+                            <div class="row row-col-3 row-col-md-1 food__row">
+                                <!-- Food item 1-->
+                                <div class="col">
+                                    <div class="food__item">
+                                        <figure class="food__img">
+                                            <img src="./assets/img/food/food-01.png" alt="" class="food__img--thumb" />
+                                        </figure>
+                                        <section class="food__infos">
+                                            <div class="food__info-top">
+                                                <h3 class="food__name">Schezwan Noodles</h3>
+                                                <p class="food__price">$49</p>
+                                            </div>
+                                            <p class="food__desc">
+                                                Fresh toasted sourdough bread with olive oil and pomegranate.
+                                            </p>
+                                            <div class="food__info-bottom">
+                                                <a href="#!" class="food__link">Order Now</a>
+                                                <div class="food__rating">
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img
+                                                        src="./assets/icon/star.svg"
+                                                        alt=""
+                                                        class="food__star no-star"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <!-- Food item 2-->
+                                <div class="col">
+                                    <div class="food__item">
+                                        <figure class="food__img">
+                                            <img src="./assets/img/food/food-02.png" alt="" class="food__img--thumb" />
+                                        </figure>
+                                        <section class="food__infos">
+                                            <div class="food__info-top">
+                                                <h3 class="food__name">Schezwan Noodles</h3>
+                                                <p class="food__price">$49</p>
+                                            </div>
+                                            <p class="food__desc">
+                                                Fresh toasted sourdough bread with olive oil and pomegranate.
+                                            </p>
+                                            <div class="food__info-bottom">
+                                                <a href="#!" class="food__link">Order Now</a>
+                                                <div class="food__rating">
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <!-- Food item 3-->
+                                <div class="col">
+                                    <div class="food__item">
+                                        <figure class="food__img">
+                                            <img src="./assets/img/food/food-03.png" alt="" class="food__img--thumb" />
+                                        </figure>
+                                        <section class="food__infos">
+                                            <div class="food__info-top">
+                                                <h3 class="food__name">Schezwan Noodles</h3>
+                                                <p class="food__price">$49</p>
+                                            </div>
+                                            <p class="food__desc">
+                                                Fresh toasted sourdough bread with olive oil and pomegranate.
+                                            </p>
+                                            <div class="food__info-bottom">
+                                                <a href="#!" class="food__link">Order Now</a>
+                                                <div class="food__rating">
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img src="./assets/icon/star.svg" alt="" class="food__star" />
+                                                    <img
+                                                        src="./assets/icon/star.svg"
+                                                        alt=""
+                                                        class="food__star no-star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icon/star.svg"
+                                                        alt=""
+                                                        class="food__star no-star"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-link__bottom">
+                            <a href="./menu.html" class="home-link__item">
+                                Explore All Food
+                                <img src="./assets/icon/arrow-to-right.svg" alt="" class="home-link__item-arrow" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="information">
+                <div class="container">
+                    <div class="information__inner">
+                        <!-- information left -->
+                        <div class="info-home-left">
+                            <h2 class="info-home-left__heading">Find us gere</h2>
+                            <p class="info-home-left__desc">Avenue Marina 34568 NY (U.S)</p>
+                            <p class="info-home-left__desc">+0123 456 7890</p>
+                            <p class="info-home-left__desc">hellouihut@gmail.com</p>
+                        </div>
+                        <!-- information right -->
+                        <div class="info-home-right">
+                            <div class="info-home-right__inner">
+                                <h2 class="info-home-right__heading">Openning Times</h2>
+                                <div class="info-home-right__group">
+                                    <p class="info-home-right__title">Mon</p>
+                                    <p class="info-home-right__desc">08:00 to 21:00</p>
+                                </div>
+                                <div class="info-home-right__group">
+                                    <p class="info-home-right__title">Wed</p>
+                                    <p class="info-home-right__desc">08:00 to 21:00</p>
+                                </div>
+                                <div class="info-home-right__group">
+                                    <p class="info-home-right__title">Thu</p>
+                                    <p class="info-home-right__desc">08:00 to 21:00</p>
+                                </div>
+                                <div class="info-home-right__group">
+                                    <p class="info-home-right__title">Fr</p>
+                                    <p class="info-home-right__desc">08:00 to 21:00</p>
+                                </div>
+                                <div class="info-home-right__group">
+                                    <p class="info-home-right__title">Sat/Sun</p>
+                                    <p class="info-home-right__desc">08:00 to 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-menu">
+                <div class="container">
+                    <div class="home-menu__inner">
+                        <p class="home-menu__sub-heading">Our menu</p>
+                        <h2 class="home-menu__heading">Choose & Taste What You Like</h2>
+                        <p class="home-menu__desc">
+                            A list of top Bangladeshi food including mains, drinks, and deserts you must try while in
+                            Bangladesh, for an authentic experience. Check now!
+                        </p>
+                        <div class="home-menu__tabs js-tabs">
+                            <ul class="home-menu__tab-list">
+                                <li class="home-menu__tab-item home-menu__tab-item-active">All</li>
+                                <li class="home-menu__tab-item">Appetizer</li>
+                                <li class="home-menu__tab-item">Soup</li>
+                                <li class="home-menu__tab-item">Dessert</li>
+                                <li class="home-menu__tab-item">Drinks</li>
+                            </ul>
+                            <div class="home-menu__separate"></div>
+                            <div class="home-menu__tab-contents">
+                                <!-- home menu tab content 1 -->
+                                <div class="home-menu__tab-content home-menu__tab-content-active">
+                                    <div class="row row-col-2 row-col-lg-1 home-menu__list-content">
+                                        <div class="col">
+                                            <!-- Home menu list -->
+                                            <ul class="home-menu__list">
+                                                <!-- Home menu item 1 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-01.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Chawli Beans and Mint Burger</h4>
+                                                    <span class="home-menu__item-price">$11</span>
+                                                </li>
+                                                <!-- Home menu item 2 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-02.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        American Chopsuey, Jain Recipe
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$16</span>
+                                                </li>
+                                                <!-- Home menu item 3 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-03.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Paneer Nuggets, Quick Paneer Deep
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$15</span>
+                                                </li>
+                                                <!-- Home menu item 4 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-04.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Stir Fried Mixed Vegetables in Butter
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$23</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <!-- Home menu list -->
+                                            <ul class="home-menu__list">
+                                                <!-- Home menu item 5 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-05.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Raw Chicken Fillet Garlic</h4>
+                                                    <span class="home-menu__item-price">$11</span>
+                                                </li>
+                                                <!-- Home menu item 6 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-06.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Makai Shorba, Thick Corn Soup</h4>
+                                                    <span class="home-menu__item-price">$16</span>
+                                                </li>
+                                                <!-- Home menu item 7 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-07.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Healthy Salmon Power Bowl</h4>
+                                                    <span class="home-menu__item-price">$15</span>
+                                                </li>
+                                                <!-- Home menu item 8 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-08.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Paneer N Cheese Roll ( Wraps and Rolls)
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$23</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- home menu tab content 2 -->
+                                <div class="home-menu__tab-content">
+                                    <div class="row row-col-2 row-col-lg-1">
+                                        <div class="col">
+                                            <!-- Home menu list -->
+                                            <ul class="home-menu__list">
+                                                <!-- Home menu item 5 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-05.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Raw Chicken Fillet Garlic</h4>
+                                                    <span class="home-menu__item-price">$11</span>
+                                                </li>
+                                                <!-- Home menu item 6 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-06.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Makai Shorba, Thick Corn Soup</h4>
+                                                    <span class="home-menu__item-price">$16</span>
+                                                </li>
+                                                <!-- Home menu item 7 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-07.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Healthy Salmon Power Bowl</h4>
+                                                    <span class="home-menu__item-price">$15</span>
+                                                </li>
+                                                <!-- Home menu item 8 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-08.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Paneer N Cheese Roll ( Wraps and Rolls)
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$23</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <!-- Home menu list -->
+                                            <ul class="home-menu__list">
+                                                <!-- Home menu item 1 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-01.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Chawli Beans and Mint Burger</h4>
+                                                    <span class="home-menu__item-price">$11</span>
+                                                </li>
+                                                <!-- Home menu item 2 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-02.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        American Chopsuey, Jain Recipe
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$16</span>
+                                                </li>
+                                                <!-- Home menu item 3 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-03.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Paneer Nuggets, Quick Paneer Deep
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$15</span>
+                                                </li>
+                                                <!-- Home menu item 4 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-04.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Stir Fried Mixed Vegetables in Butter
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$23</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- home menu tab content 3 -->
+                                <div class="home-menu__tab-content">
+                                    <div class="row row-col-2 row-col-lg-1">
+                                        <div class="col">
+                                            <!-- Home menu list -->
+                                            <ul class="home-menu__list">
+                                                <!-- Home menu item 1 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-01.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Chawli Beans and Mint Burger</h4>
+                                                    <span class="home-menu__item-price">$11</span>
+                                                </li>
+                                                <!-- Home menu item 2 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-02.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        American Chopsuey, Jain Recipe
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$16</span>
+                                                </li>
+                                                <!-- Home menu item 3 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-03.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Paneer Nuggets, Quick Paneer Deep
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$15</span>
+                                                </li>
+                                                <!-- Home menu item 4 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-04.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Stir Fried Mixed Vegetables in Butter
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$23</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <!-- Home menu list -->
+                                            <ul class="home-menu__list">
+                                                <!-- Home menu item 5 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-05.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Raw Chicken Fillet Garlic</h4>
+                                                    <span class="home-menu__item-price">$11</span>
+                                                </li>
+                                                <!-- Home menu item 6 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-06.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Makai Shorba, Thick Corn Soup</h4>
+                                                    <span class="home-menu__item-price">$16</span>
+                                                </li>
+                                                <!-- Home menu item 7 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-07.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">Healthy Salmon Power Bowl</h4>
+                                                    <span class="home-menu__item-price">$15</span>
+                                                </li>
+                                                <!-- Home menu item 8 -->
+                                                <li class="home-menu__item">
+                                                    <img
+                                                        src="./assets/img/menu/item-08.png"
+                                                        alt=""
+                                                        class="home-menu__item-img"
+                                                    />
+                                                    <h4 class="home-menu__item-title">
+                                                        Paneer N Cheese Roll ( Wraps and Rolls)
+                                                    </h4>
+                                                    <span class="home-menu__item-price">$23</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-link__bottom">
+                            <a href="./menu.html" class="home-link__item">
+                                Explore All Food
+                                <img src="./assets/icon/arrow-to-right.svg" alt="" class="home-link__item-arrow" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <div class="container">
+                    <div class="restaurant__inner">
+                        <div class="restaurant__top">
+                            <h2 class="restaurant__heading">Visit Our Restaurant</h2>
+                            <p class="restaurant__desc d-md-none">
+                                Quality country-style menu selection, friendly and efficient service, combined with
+                                genuine value has kept Our Best serving families like yours for over 28.
+                            </p>
+                        </div>
+                        <div class="restaurant__media">
+                            <div class="restaurant__images">
+                                <figure class="restaurant__img">
+                                    <img
+                                        src="./assets/img/restaurant/item-01.png"
+                                        alt=""
+                                        class="restaurant__img--thumb"
+                                    />
+                                </figure>
+                                <figure class="restaurant__img restaurant__img-center">
+                                    <img
+                                        src="./assets/img/restaurant/item-02.png"
+                                        alt=""
+                                        class="restaurant__img--thumb"
+                                    />
+                                </figure>
+                                <figure class="restaurant__img">
+                                    <img
+                                        src="./assets/img/restaurant/item-03.png"
+                                        alt=""
+                                        class="restaurant__img--thumb"
+                                    />
+                                </figure>
+                                <figure class="restaurant__img">
+                                    <img
+                                        src="./assets/img/restaurant/item-04.png"
+                                        alt=""
+                                        class="restaurant__img--thumb"
+                                    />
+                                </figure>
+                                <figure class="restaurant__img">
+                                    <img
+                                        src="./assets/img/restaurant/item-05.png"
+                                        alt=""
+                                        class="restaurant__img--thumb"
+                                    />
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="dots d-none d-md-flex">
+                            <span class="dot dot-active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="home-order">
+                <div class="container">
+                    <div class="home-order__inner">
+                        <!-- Home order left -->
+                        <div class="home-order__left">
+                            <h2 class="home-order__heading">Reserve ! Book Now</h2>
+                            <div class="home-order__info">
+                                <div class="home-order__info--item">
+                                    <span class="home-order__info--title">Set date</span>
+                                    <div class="home-order__info--desc">
+                                        <span class="home-order__info--date">21</span>
+                                        <p class="home-order__info--month">Sep</p>
+                                    </div>
+                                </div>
+                                <div class="home-order__info--item">
+                                    <span class="home-order__info--title">Guests</span>
+                                    <div class="home-order__info--desc">
+                                        <span class="home-order__info--date">2</span>
+                                        <div class="home-order__info--choose">
+                                            <img
+                                                src="./assets/icon/arrow-up.svg"
+                                                alt=""
+                                                class="home-order__info--icon"
+                                            />
+                                            <img
+                                                src="./assets/icon/arrow-down.svg"
+                                                alt=""
+                                                class="home-order__info--icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-rectangle home-order__btn">Book Now</button>
+                        </div>
+                        <!-- Home order img -->
+                        <div class="home-order__media">
+                            <div class="home-order__img">
+                                <img
+                                    src="./assets/img/home-order/home-order-01.png"
+                                    alt=""
+                                    class="home-order__img--thumb"
+                                />
+                            </div>
+                        </div>
+                        <figure class="home-order__decor d-none">
+                            <svg
+                                width="99"
+                                height="87"
+                                viewBox="0 0 99 87"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M30.7241 6.34066L16.6422 34.7151C15.3892 37.0515 12.1735 37.4396 10.3916 35.4694L4.26724 27.0692V38.9139C4.26724 40.0821 3.31199 41.0291 2.13362 41.0291C0.955254 41.0291 0 40.0821 0 38.9139L0.762498 23.1222C0.762498 22.2457 1.30784 21.46 2.13362 21.1467C2.95941 20.8335 3.89452 21.0576 4.48475 21.7103L12.7783 31.4403L29.3984 1.57301C30.7525 -0.951969 34.5728 -0.295974 34.9914 2.53338L37.4799 29.8908L70.5511 9.20502C71.3107 8.72988 72.2892 8.77723 72.9985 9.32345C73.7078 9.86967 73.9962 10.7978 73.7197 11.645L65.8869 35.6458L95.9217 20.9422C96.8064 20.5091 97.8754 20.7339 98.5065 21.4859C99.1377 22.2379 99.1663 23.3208 98.5757 24.1046L75.5509 54.6614L95.1271 50.3853C96.0837 50.1763 97.0609 50.64 97.4969 51.5096C97.9328 52.3792 97.7155 53.4313 96.9698 54.061L75.1925 71.981C74.7211 72.3689 74.7541 73.1003 75.2585 73.4443L82.5471 78.4144C83.0351 78.874 83.2757 79.5349 83.1963 80.1974C83.1169 80.86 82.7268 81.4466 82.1438 81.78L71.7613 86.7166C70.7406 87.3004 69.4358 86.9533 68.8469 85.9415C68.2581 84.9296 69.3888 84.3391 70.4095 83.7554L77.537 79.531L71.7613 74.0915C70.475 72.8801 70.5311 70.8309 71.8816 69.6904L91.319 53.7202L72.6058 59.2116C69.1307 59.9707 67.4265 56.8873 69.556 54.061L89.8301 28.6424L63.4793 41.2116C61.111 42.3711 58.5016 40.1363 59.3147 37.645L67.8464 15.8988L39.2023 33.8154C36.8532 35.2848 33.7561 33.8724 33.3531 31.148L30.7241 6.34066Z"
+                                    fill="#FFCA0E"
+                                />
+                            </svg>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-offers">
+                <div class="container">
+                    <div class="home-offers__inner">
+                        <h2 class="home-offers__heading">Our Daily Offers</h2>
+
+                        <div class="home-offers-bottom">
+                            <!-- home offers left -->
+                            <div class="home-offers-left">
+                                <div class="home-offers-left__info">
+                                    <h3 class="home-offers-left__title">Lunch Time</h3>
+                                    <p class="home-offers-left__sub"><strong>30%</strong>off</p>
+                                    <p class="home-offers-left__desc">
+                                        We love food, lots of different and food, just like you.
+                                    </p>
+                                    <a href="#!" class="home-offers-left__link btn-rectangle-color">Order now</a>
+                                </div>
+                            </div>
+                            <!-- home offers right -->
+                            <div class="home-offers-right">
+                                <div class="offers__list">
+                                    <!-- Item 1 -->
+                                    <div class="offers__item">
+                                        <div class="offers__item-image">
+                                            <img
+                                                src="./assets/img/offers/offers-01.png"
+                                                alt=""
+                                                class="offers__item-img"
+                                            />
+                                        </div>
+                                        <div class="offers__item--bottom">
+                                            <div class="offers__item-content">
+                                                <h4 class="offers__item--name">Spicy Club</h4>
+                                                <p class="offers__item--desc">
+                                                    Pork, chicken and vegetable fried rolls served with lettuce wraps
+                                                </p>
+                                            </div>
+                                            <span class="offers__item--price">$42</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 2 -->
+                                    <div class="offers__item">
+                                        <div class="offers__item-image">
+                                            <img
+                                                src="./assets/img/offers/offers-02.png"
+                                                alt=""
+                                                class="offers__item-img"
+                                            />
+                                        </div>
+                                        <div class="offers__item--bottom">
+                                            <div class="offers__item-content">
+                                                <h4 class="offers__item--name">Almond baked Brie</h4>
+                                                <p class="offers__item--desc">
+                                                    Pork, chcken and vegetable fried rolls served with lettuce wraps
+                                                </p>
+                                            </div>
+                                            <span class="offers__item--price">$38</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 3 -->
+                                    <div class="offers__item">
+                                        <div class="offers__item-image">
+                                            <img
+                                                src="./assets/img/offers/offers-03.png"
+                                                alt=""
+                                                class="offers__item-img"
+                                            />
+                                        </div>
+                                        <div class="offers__item--bottom">
+                                            <div class="offers__item-content">
+                                                <h4 class="offers__item--name">Tuscan Flatbread</h4>
+                                                <p class="offers__item--desc">
+                                                    Pork, chcken and vegetable fried rolls served with lettuce wraps
+                                                </p>
+                                            </div>
+                                            <span class="offers__item--price">$49</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-chef">
+                <div class="container">
+                    <div class="home-chef__inner">
+                        <h2 class="home-chef__heading">They will cook for you</h2>
+                        <p class="home-chef__desc">
+                            Our Diners can enjoy cooking for themselves, or visiting a curated selection of restaurants
+                            in the area. They will cook for you and make sure you have a home away from home at all
+                            times.
+                        </p>
+                        <div class="home-chef__bottom">
+                            <div class="home-chef__chefs">
+                                <div class="row row-col-3 row-col-md-1">
+                                    <!-- chef item 1 -->
+                                    <div class="col">
+                                        <div class="home-chef__item">
+                                            <div class="home-chef__img">
+                                                <img
+                                                    src="./assets/img/chef/avatar-01.png"
+                                                    alt=""
+                                                    class="home-chef__avatar"
+                                                />
+                                            </div>
+                                            <h3 class="home-chef__name">Jubed Ahmed</h3>
+                                            <span class="home-chef__sub-name">Chef</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- chef item 2 -->
+                                    <div class="col">
+                                        <div class="home-chef__item">
+                                            <div class="home-chef__img">
+                                                <img
+                                                    src="./assets/img/chef/avatar-02.png"
+                                                    alt=""
+                                                    class="home-chef__avatar"
+                                                />
+                                            </div>
+                                            <h3 class="home-chef__name">Delwar hussen</h3>
+                                            <span class="home-chef__sub-name">Assisten chef</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- chef item 3 -->
+                                    <div class="col">
+                                        <div class="home-chef__item">
+                                            <div class="home-chef__img">
+                                                <img
+                                                    src="./assets/img/chef/avatar-03.png"
+                                                    alt=""
+                                                    class="home-chef__avatar"
+                                                />
+                                            </div>
+                                            <h3 class="home-chef__name">Tajul Islam</h3>
+                                            <span class="home-chef__sub-name">Chef</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-blog">
+                <div class="container">
+                    <div class="home-blog__inner">
+                        <div class="home-blog-top">
+                            <p class="home-blog-top__sub">Our blog</p>
+                            <h2 class="home-blog-top__heading">Recent Articles</h2>
+                        </div>
+                        <div class="home-blog-bottom">
+                            <!-- Group 1 -->
+                            <div class="home-blog__group">
+                                <div class="row row-col-2 row-col-lg-1">
+                                    <div class="col">
+                                        <div class="home-blog__image">
+                                            <img
+                                                src="./assets/img/blog/blog-img-01.jpg"
+                                                alt=""
+                                                class="home-blog__thumb"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!--  -->
+                                        <div class="home-blog__info">
+                                            <p class="home-blog__date">August 6, 2022</p>
+                                            <h3 class="home-blog__title">
+                                                The Most Expensive Cup of Coffee in the Usa
+                                            </h3>
+                                            <p class="home-blog__desc">
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                accusantium doloremque lauatium, totam rem aperiam perspiciatis unde
+                                                omnis.
+                                            </p>
+                                            <div class="home-blog__contact">
+                                                <span class="home-blog__contact-desc"
+                                                    >Comments: <strong>165</strong></span
+                                                >
+
+                                                <span class="home-blog__contact-desc"
+                                                    >Views: <strong>1265</strong></span
+                                                >
+                                            </div>
+                                            <a href="#!" class="home-blog__link">Read Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Group 2 -->
+                            <div class="home-blog__group">
+                                <div class="row row-col-2 row-col-lg-1 home-blog__group-row">
+                                    <div class="col">
+                                        <div class="home-blog__image">
+                                            <img
+                                                src="./assets/img/blog/blog-img-02.jpg"
+                                                alt=""
+                                                class="home-blog__thumb"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!--  -->
+                                        <div class="home-blog__info">
+                                            <p class="home-blog__date">August 6, 2022</p>
+                                            <h3 class="home-blog__title">
+                                                The Most Expensive Cup of Coffee in the Usa
+                                            </h3>
+                                            <p class="home-blog__desc">
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                accusantium doloremque lauatium, totam rem aperiam perspiciatis unde
+                                                omnis.
+                                            </p>
+                                            <div class="home-blog__contact">
+                                                <span class="home-blog__contact-desc"
+                                                    >Comments: <strong>165</strong></span
+                                                >
+
+                                                <span class="home-blog__contact-desc"
+                                                    >Views: <strong>1265</strong></span
+                                                >
+                                            </div>
+                                            <a href="#!" class="home-blog__link">Read Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-link__bottom">
+                            <a href="./pages.html" class="home-link__item">
+                                Explore All Food
+                                <img src="./assets/icon/arrow-to-right.svg" alt="" class="home-link__item-arrow" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="newsletter__bg-img">
+                    <img src="./assets/img/recommend/recommend-bg.png" alt="" class="newsletter__thumb" />
+                </div>
+                <div class="newsletter__inner">
+                    <div class="container">
+                        <div class="newsletter__info">
+                            <div class="newsletter-left">
+                                <h2 class="newsletter-left__heading">Newsletter</h2>
+                                <p class="newsletter-left__desc">
+                                    Subscribe to our newsletter and receive 15% discount from your order.
+                                </p>
+                            </div>
+                            <div class="newsletter-right">
+                                <form action="" class="home-form">
+                                    <label for="" class="home-form__email">
+                                        <input
+                                            type="email"
+                                            name=""
+                                            id=""
+                                            class="home-form__input"
+                                            placeholder="Enter your email address"
+                                        />
+                                        <img
+                                            src="./assets/icon/arrow-to-right-email.svg"
+                                            alt=""
+                                            class="home-form__icon"
+                                        />
+                                    </label>
+                                    <button type="submit" class="btn-rectangle home-form__btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>

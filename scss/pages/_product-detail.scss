@@ -1,0 +1,188 @@
+@use "../abstracts";
+//  @include abstracts.screen(lg)
+
+.product-page {
+    margin-top: 50px;
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__media {
+        position: relative;
+        padding-top: 108.1%;
+    }
+    &__img--thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    // product page content
+
+    &__content {
+        @include abstracts.screen(lg) {
+            margin-top: 40px;
+        }
+    }
+    &__name {
+        font-size: 6.4rem;
+        font-weight: 500;
+        line-height: 115.625%;
+        text-transform: capitalize;
+        margin-bottom: 9px;
+    }
+    &__evaluate {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+
+    &__price {
+        display: inline-block;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%;
+        text-transform: capitalize;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__num-review,
+    &__desc {
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%;
+    }
+    &__button {
+        margin-top: 52px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+    &__edit-num {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--text-sub-color);
+    }
+    &__btn-edit {
+        padding: 10px 15px;
+    }
+
+    &__btn-minut {
+        transform: translateY(-3px);
+    }
+    &__btn-plus {
+        transform: translateY(2px);
+    }
+    &__number {
+        display: inline-block;
+
+        align-self: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-left: 1px solid var(--text-sub-color);
+        border-right: 1px solid var(--text-sub-color);
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+
+    &__sub-info {
+        display: block;
+        color: var(--text-sub-color);
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.6rem;
+        line-height: 162.5%;
+
+        strong {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+    }
+}
+.product-sub {
+    margin-top: 20px;
+    font-family: "Plus Jakarta Sans";
+    &__inner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 42px;
+    }
+
+    &__separate {
+        width: 100%;
+        height: 1px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+        opacity: 0.4;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    &__content {
+        display: none;
+        flex-direction: column;
+        row-gap: 30px;
+
+        &-active {
+            display: flex;
+        }
+    }
+    &__desc,
+    &__item {
+        color: var(--text-sub-color);
+        font-size: 1.6rem;
+        line-height: 162.5%;
+    }
+
+    &__item {
+        transition: 0.2s;
+        user-select: none;
+        &-active {
+            position: relative;
+            color: #fff;
+            &::before {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 1px;
+                content: "";
+                display: inline-block;
+                background: var(--dark-orange);
+                bottom: -17px;
+            }
+        }
+
+        &:hover {
+            color: inherit;
+            cursor: pointer;
+        }
+    }
+}
+
+.product-relates {
+    margin-top: 20px;
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+    }
+}
+.prod-form__row {
+    @include abstracts.screen(lg) {
+        row-gap: 30px;
+    }
+}
